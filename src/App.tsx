@@ -1,3 +1,4 @@
+import "./index.css"; // Ensure global styles are imported
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
@@ -6,7 +7,6 @@ import AboutPage from "./components/pages/AboutPage";
 import ServicesPage from "./components/pages/ServicesPage";
 import PropertiesPage from "./components/pages/PropertiesPage";
 import ContactPage from "./components/pages/ContactPage";
-import "./App.css"; // Ensure global styles are imported
 
 export default function App() {
   return (
