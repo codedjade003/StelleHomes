@@ -135,7 +135,7 @@ const [activeIndex, setActiveIndex] = useState(0);
   };
 
   return (
-    <section className="flex flex-col xl1230:flex-row gap-12 xl1230:gap-[105px] justify-center items-center -mt-10 pt-0 pb-32 px-6 xl1230:px-12">
+    <section className="flex flex-col xl:flex-row gap-12 xl:gap-[105px] justify-center items-center mt-12 pt-0 pb-32 px-6 xl:px-12">
       {/* Left Column */}
       <header className="flex flex-col max-w-full lg:max-w-[447px] gap-6 text-center lg:text-left">
         <h2 className="[-webkit-text-stroke:0.8px_#000000] [font-family:'MAINLUX-Regular',Helvetica] font-normal text-black text-3xl sm:text-4xl lg:text-6xl leading-tight">

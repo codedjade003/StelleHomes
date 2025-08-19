@@ -42,47 +42,46 @@ export const MeetOurTeamSection = (): JSX.Element => {
 
   return (
     <div className="w-full overflow-x-auto bg-white scrollbar-hide">
-
-      <div className="flex px-5 -mt-[50px] w-max h-[854px] max-sm:h-auto max-sm:py-32 max-sm:gap-8">
+      <div className="flex px-5 -mt-[50px] w-max h-auto py-8 gap-8 md:h-[854px] md:py-32 md:gap-0">
         {teamMembers.map((member) => (
           <div
             key={member.id}
-            className="flex items-center justify-center relative max-sm:flex max-sm:gap-6"
+            className="flex items-center justify-center relative gap-4"
           >
-          <div className="relative w-[447px] h-[591px] flex-shrink-0 max-sm:w-[300px] max-sm:h-[400px] max-sm:mx-auto">
-            <div className="relative w-[418px] h-[501px] top-[15px] left-[19px] max-sm:w-[300px] max-sm:h-[350px] max-sm:top-[24px] max-sm:left-[10px]">
-              <div className="absolute top-[54px] w-[418px] h-[447px] bg-[#f7bd01] rounded-[15px] max-sm:top-0 max-sm:w-[300px] max-sm:h-[350px] max-sm:rounded-[10px]" />
-              <img
-                className="absolute w-[418px] h-[501px] sm:top-0 left-0 object-cover max-sm:w-[300px] max-sm:h-[415px] max-sm:bottom-0"
-                alt={member.name}
-                src={member.image}
-              />
-            </div>
-          </div>
-
-          {/* Text card - Fixed width + fixed height */}
-          <div className="flex-shrink-0 max-sm:w-[90vw] max-sm:max-w-[320px] max-sm:mx-auto">
-            <div className="font-[MAINLUX-Regular] flex flex-col w-[567px] h-[450px] 
-                            items-start gap-3.5 px-[40px] pt-[83px] pb-9 
-                            bg-[#d9d9d9] rounded-[15px] 
-                            max-sm:w-[350px] max-sm:h-[350px] max-sm:gap-3 
-                            max-sm:px-5 max-sm:pt-10 max-sm:pb-6 max-sm:rounded-[10px]">
-
-              <div className="[-webkit-text-stroke:0.55px_#000000] text-black text-[40px] font-normal leading-[42px] max-sm:text-[28px] max-sm:leading-[32px]">
-                {member.name}
+            {/* Image container - Reversed dimensions */}
+            <div className="relative w-[300px] h-[400px] flex-shrink-0 mx-auto md:w-[447px] md:h-[591px]">
+              <div className="relative w-[300px] h-[350px] top-[24px] left-[10px] md:w-[418px] md:h-[501px] md:top-[15px] md:left-[19px]">
+                <div className="absolute w-[300px] h-[350px] bg-[#f7bd01] rounded-[10px] top-[60px] md:top-[54px] md:w-[418px] md:h-[447px] md:rounded-[15px]" />
+                <img
+                  className="absolute top-0 left-0 w-[300px] h-[415px] object-cover md:w-[418px] md:h-[501px]"
+                  alt={member.name}
+                  src={member.image}
+                />
               </div>
-
-              <div className="[-webkit-text-stroke:0.55px_#000000] text-black text-3xl font-normal leading-[32px] max-sm:text-[22px] max-sm:leading-[26px]">
-                {member.position}
-              </div>
-
-              <p className="font-[Montserrat] text-black text-xl leading-[24px] 
-                            max-sm:text-base max-sm:leading-[20px] max-sm:w-full max-sm:break-words overflow-hidden">
-                {member.description}
-              </p>
             </div>
-          </div>
 
+            {/* Text card - Reversed dimensions */}
+            <div className="relative top-[60px] md:top-0 flex-shrink-0 w-[90vw] max-w-[320px] mx-auto md:w-auto md:max-w-none">
+              <div className="font-[MAINLUX-Regular] flex flex-col w-[350px] h-[350px] 
+                              items-start gap-3 px-5 pt-10 pb-6 
+                              bg-[#d9d9d9] rounded-[10px] 
+                              md:w-[567px] md:h-[450px] md:gap-3.5 
+                              md:px-[40px] md:pt-[83px] md:pb-9 md:rounded-[15px]">
+
+                <div className="[-webkit-text-stroke:0.55px_#000000] text-black text-[28px] font-normal leading-[32px] md:text-[40px] md:leading-[42px]">
+                  {member.name}
+                </div>
+
+                <div className="[-webkit-text-stroke:0.55px_#000000] text-black text-[22px] font-normal leading-[26px] md:text-3xl md:leading-[32px]">
+                  {member.position}
+                </div>
+
+                <p className="font-[Montserrat] text-black text-base leading-[20px] 
+                              md:text-xl md:leading-[24px] w-full break-words overflow-hidden">
+                  {member.description}
+                </p>
+              </div>
+            </div>
           </div>
         ))}
       </div>

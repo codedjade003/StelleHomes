@@ -64,24 +64,23 @@ const servicesData = {
   ],
 };
 
-
 const ServiceCard = ({ service, layout = "default" }: { service: Service; layout?: string }) => {
   return (
     <div
       className={`
         relative w-full max-w-[568px] 
-        h-[172px] 
+        h-auto flex flex-col items-start
+        md:h-[172px] 
         ${layout === "overflow" ? "overflow-hidden" : ""} 
-        max-sm:h-auto max-sm:flex max-sm:flex-col max-sm:items-start
       `}
     >
       <img
-        className="absolute w-[130px] h-[138px] top-1 left-[9px] max-sm:relative max-sm:top-0 max-sm:left-0"
+        className="relative top-0 left-0 md:absolute md:w-[130px] md:h-[138px] md:top-1 md:left-[9px]"
         alt={service.title}
         src={service.image}
       />
       <div
-        className="w-full pl-40 pr-4 absolute top-1 max-sm:pl-0 max-sm:pr-0 max-sm:mt-[8px] max-sm:relative max-sm:top-auto"
+        className="w-full pl-0 pr-0 mt-[8px] relative top-auto md:pl-40 md:pr-4 md:absolute md:top-1"
       >
         <h4 className="[-webkit-text-stroke:0.38px_#000000] font-[MAINLUX-Light] text-black text-[28.2px] leading-[29.3px] mb-1">
           {service.title}
@@ -112,33 +111,38 @@ const SectionHeader = ({
 }) => {
   return (
     <div
-      className={`w-full max-w-[1440px] mx-auto flex flex-col xl1230:flex-row gap-8 mb-16 ${
-        reverse ? "xl1230:flex-row-reverse xl1230:ml-[30px]" : ""
-      }`}
+      className={`w-full max-w-[1440px] mx-auto flex flex-col gap-8 mb-16 
+        md:flex-row 
+        ${reverse ? "md:flex-row-reverse md:ml-[30px]" : ""}`}
     >
       {/* Text */}
       <div
-        className={`w-full xl1230:w-1/2 flex flex-col justify-center ${
-          reverse ? "xl1230:mr-[130px] xl1230:ml-0" : ""
-        }`}
+        className={`w-full flex flex-col justify-center 
+          
+          ${reverse ? "" : ""}`}
       >
-        <h2 className="[-webkit-text-stroke:1.54px_#000000] font-[MAINLUX-Regular] text-black mb-4 text-4xl max-sm:text-5xl xl1230:text-6xl leading-snug">
+        <h2 className="[-webkit-text-stroke:1.54px_#000000] font-[MAINLUX-Regular] text-black mb-4 text-4xl leading-snug 
+          md:text-5xl 
+          lg:text-6xl">
           {title}
         </h2>
-        <p className="font-[Montserrat] text-black text-base max-sm:text-lg xl1230:text-xl leading-relaxed">
+        <p className="font-[Montserrat] text-black text-base leading-relaxed 
+          md:text-lg 
+          lg:text-xl">
           {description}
         </p>
       </div>
 
       {/* Image */}
       <div
-        className={`w-full xl1230:w-[550px] xl1230:flex-shrink-0 ${
-          reverse ? "xl1230:ml-[-50px] xl1230:mr-0" : ""
-        }`}
+        className={`w-full 
+          md:w-[550px] md:flex-shrink-0 
+          ${reverse ? "md:ml-[-50px] md:mr-0" : ""}`}
       >
         <div className="bg-black bg-opacity-20 rounded-[15px] overflow-hidden w-full h-auto">
           <img
-            className="w-full h-auto xl1230:max-w-none xl1230:max-h-none object-cover aspect-[1.7]"
+            className="w-full h-auto object-cover aspect-[1.7] 
+              lg:max-w-none lg:max-h-none"
             alt={title}
             src={image}
           />
@@ -156,7 +160,8 @@ const ServicesGrid = ({ services, title }: { services: Service[]; title: string 
       <h3 className="font-[MAINLUX-semibold] text-black text-[35px] leading-[36.4px] mb-12">
         {title}
       </h3>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
+      <div className="grid grid-cols-1 gap-6 
+        md:grid-cols-2 md:gap-12">
         {services.map((service, index) => (
           <ServiceCard 
             key={service.id} 
@@ -175,7 +180,8 @@ export const PropertyManagementSection = () => {
     <section className="py-20">
       {/* Section header */}
       <div className="text-center max-w-4xl mx-auto mb-20">
-        <h2 className="[-webkit-text-stroke:1.54px_#000000] font-[MAINLUX-light] text-black text-4xl md:text-6xl leading-[62.4px] mb-8">
+        <h2 className="[-webkit-text-stroke:1.54px_#000000] font-[MAINLUX-light] text-black text-4xl leading-[62.4px] mb-8 
+          md:text-6xl">
           Comprehensive Property Management
         </h2>
         <p className="font-[Montserrat] text-black text-xl leading-[24px]">
@@ -185,9 +191,11 @@ export const PropertyManagementSection = () => {
       </div>
 
       {/* Cards container */}
-      <div className="flex flex-col lg:flex-row gap-8">
+      <div className="flex flex-col gap-8 
+        lg:flex-row">
         {/* Nigerian Properties Card */}
-        <div className="lg:w-1/2 px-4">
+        <div className="px-4 
+          lg:w-1/2">
           <div className="bg-[#ffbf00] rounded-[15px] overflow-hidden flex flex-col h-full">
             <div className="h-[383px] w-full overflow-hidden rounded-t-[15px]">
               <img
@@ -214,7 +222,8 @@ export const PropertyManagementSection = () => {
         </div>
 
         {/* International Properties Card */}
-        <div className="lg:w-1/2 px-4">
+        <div className="px-4 
+          lg:w-1/2">
           <div className="bg-[#ffbf00] rounded-[15px] overflow-hidden flex flex-col h-full">
             <div className="h-[383px] w-full overflow-hidden rounded-t-[15px]">
               <img

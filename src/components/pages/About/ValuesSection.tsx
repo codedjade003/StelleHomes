@@ -47,7 +47,7 @@ export const ValuesSection = (): JSX.Element => {
         {/* Cards */}
         <div
           className="
-            grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center
+            grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center
             [@media(min-width:1024px)_and_(max-width:1271px)]:grid-cols-2
           "
         >
@@ -68,7 +68,7 @@ export const ValuesSection = (): JSX.Element => {
             <img
               src={value.svg}
               alt={`${value.title} icon`}
-              className="absolute bottom-8 max-sm:bottom-2 max-sm:right-3 right-8 w-[97px] h-[97px] opacity-0 scale-90 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
+              className="absolute md:bottom-8 bottom-2 right-3 md:right-8 w-[97px] h-[97px] opacity-0 scale-90 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
             />
           </div>
         ))}

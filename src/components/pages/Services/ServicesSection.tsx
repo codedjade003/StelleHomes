@@ -23,7 +23,7 @@ export const ServicesSection = (): JSX.Element => {
         />
         <h2
           id="services-heading-mobile"
-          className="mt-16 ml-2 max-sm:mb-0 mb-4 font-[MAINLUX-Regular] [-webkit-text-stroke:1.54px_#000000] max-sm:text-4xl text-6xl leading-[48px] text-black text-left"
+          className="mt-16 ml-2 sm:mb-0 mb-4 font-[MAINLUX-Regular] [-webkit-text-stroke:1.54px_#000000] sm:text-4xl text-6xl leading-[48px] text-black text-left"
         >
           Our Services
         </h2>
