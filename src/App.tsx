@@ -1,4 +1,4 @@
-import "/index.css"; // Ensure global styles are imported
+import "./index.css"; // Ensure global styles are imported
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
