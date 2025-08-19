@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   
   // ✅ CRITICAL FOR DEPLOYMENT - Add this base configuration
-  base: './', // Use relative paths for assets
+  base: '/', // Use relative paths for assets
   
   // ✅ Optional: Configure build output
   build: {
