@@ -6,7 +6,7 @@ import AboutPage from "./components/pages/AboutPage";
 import ServicesPage from "./components/pages/ServicesPage";
 import PropertiesPage from "./components/pages/PropertiesPage";
 import ContactPage from "./components/pages/ContactPage";
-
+import "./App.css"; // Ensure global styles are imported
 
 export default function App() {
   return (
