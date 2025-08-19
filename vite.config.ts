@@ -1,15 +1,31 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    watch: {
-      usePolling: true,  // Forces Vite to pick up changes reliably
-      interval: 100,     // Check for file changes every 100ms
+export default defineConfig(({ mode }) => {
+  const isProduction = mode === 'production';
+  
+  return {
+    plugins: [react()],
+    
+    // ✅ Base path configuration
+    base: isProduction ? './' : '/',
+    
+    // ✅ Build configuration for production
+    build: {
+      outDir: 'dist',
+      assetsDir: 'assets',
+      sourcemap: !isProduction, // Only enable sourcemaps in development
     },
-    hmr: {
-      overlay: true,     // Show error overlay on the browser
+    
+    // ✅ Development-only configuration
+    server: isProduction ? undefined : {
+      watch: {
+        usePolling: true,
+        interval: 100,
+      },
+      hmr: {
+        overlay: true,
+      },
     },
-  },
+  };
 });
