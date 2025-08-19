@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Custom global styles */
+
+@font-face {
+  font-family: 'MAINLUX-SemiBold';
+  src: url('./assets/fonts/MAINLUX-SemiBold.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MAINLUX-Bold';
+  src: url('./assets/fonts/MAINLUX-Bold.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MAINLUX-Light';
+  src: url('./assets/fonts/MAINLUX-Light.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MAINLUX-Medium';
+  src: url('./assets/fonts/MAINLUX-Medium.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MAINLUX-Regular';
+  src: url('./assets/fonts/MAINLUX-Regular.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-font {
+  font-family: 'MAINLUX-SemiBold', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+body {
+  @apply text-gray-900;
+  font-family: 'MAINLUX-SemiBold', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
