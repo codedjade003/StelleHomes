@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     
     // ✅ Base path configuration
-    base: isProduction ? './' : '/',
+    base: '/',
     
     // ✅ Build configuration for production
     build: {
