@@ -1,31 +1,16 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 
-export default defineConfig(({ mode }) => {
-  const isProduction = mode === 'production';
+export default defineConfig({
+  plugins: [react()],
   
-  return {
-    plugins: [react()],
-    
-    // ✅ Base path configuration
-    base: isProduction ? './' : '/',
-    
-    // ✅ Build configuration for production
-    build: {
-      outDir: 'dist',
-      assetsDir: 'assets',
-      sourcemap: !isProduction, // Only enable sourcemaps in development
-    },
-    
-    // ✅ Development-only configuration
-    server: isProduction ? undefined : {
-      watch: {
-        usePolling: true,
-        interval: 100,
-      },
-      hmr: {
-        overlay: true,
-      },
-    },
-  };
+  // ✅ CRITICAL FOR DEPLOYMENT - Add this base configuration
+  base: './', // Use relative paths for assets
+  
+  // ✅ Optional: Configure build output
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false, // Disable sourcemaps for smaller build size
+  },
 });
