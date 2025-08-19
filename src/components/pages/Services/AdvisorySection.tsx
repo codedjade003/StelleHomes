@@ -180,7 +180,7 @@ export const PropertyManagementSection = () => {
     <section className="py-20">
       {/* Section header */}
       <div className="text-center max-w-4xl mx-auto mb-20">
-        <h2 className="[-webkit-text-stroke:1.54px_#000000] font-[MAINLUX-light] text-black text-4xl leading-[62.4px] mb-8 
+        <h2 className="[-webkit-text-stroke:1.54px_#000000] font-[MAINLUX-Regular] text-black text-4xl leading-[62.4px] mb-8 
           md:text-6xl">
           Comprehensive Property Management
         </h2>
@@ -191,7 +191,7 @@ export const PropertyManagementSection = () => {
       </div>
 
       {/* Cards container */}
-      <div className="flex flex-col gap-8 
+      <div className="flex flex-col 
         lg:flex-row">
         {/* Nigerian Properties Card */}
         <div className="px-4 
@@ -205,18 +205,18 @@ export const PropertyManagementSection = () => {
               />
             </div>
 
-            <div className="p-8 flex-1 flex flex-col justify-start">
-              <h3 className="[-webkit-text-stroke:0.38px_#000000] font-mainlux-light text-black text-[28.2px] leading-[29.3px] mb-4">
+            <div className="p-8 ml-4 flex-1 flex flex-col justify-start">
+              <h3 className="[-webkit-text-stroke:0.38px_#000000] font-[MAINLUX-Regular] text-black text-[28.2px] leading-[29.3px] mb-4">
                 For Nigerian Properties
               </h3>
-              <div className="font-montserrat text-black text-[15px] leading-[18px] space-y-2">
-                <p>Local team with deep market knowledge</p>
-                <p>Regular property inspections and maintenance</p>
-                <p>Tenant sourcing, screening, and management</p>
-                <p>Rent collection and financial reporting</p>
-                <p>Legal compliance and documentation</p>
-                <p>Tax filing assistance</p>
-              </div>
+              <ul className="list-disc pl-10 font-[Montserrat] text-black text-[15px] leading-[18px] space-y-2 marker:text-[10px] marker:text-black">
+                <li>Local team with deep market knowledge</li>
+                <li>Regular property inspections and maintenance</li>
+                <li>Tenant sourcing, screening, and management</li>
+                <li>Rent collection and financial reporting</li>
+                <li>Legal compliance and documentation</li>
+                <li>Tax filing assistance</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -233,18 +233,18 @@ export const PropertyManagementSection = () => {
               />
             </div>
 
-            <div className="p-8 flex-1 flex flex-col justify-start">
-              <h3 className="[-webkit-text-stroke:0.38px_#000000] font-mainlux-light text-black text-[28.2px] leading-[29.3px] mb-4">
+            <div className="p-8 ml-4 flex-1 flex flex-col justify-start">
+              <h3 className="[-webkit-text-stroke:0.38px_#000000] font-[MAINLUX-Regular] text-black text-[28.2px] leading-[29.3px] mb-4">
                 For International Properties
               </h3>
-              <div className="font-montserrat text-black text-[15px] leading-[18px] space-y-2">
-                <p>Coordination with trusted partners in each location</p>
-                <p>Tenant placement and management</p>
-                <p>Regular condition reports and updates</p>
-                <p>Income collection and repatriation</p>
-                <p>Annual tax preparation assistance</p>
-                <p>Property enhancement recommendations</p>
-              </div>
+              <ul className="list-disc pl-10 font-[Montserrat] text-black text-[15px] leading-[18px] space-y-2  marker:text-[10px] marker:text-black">
+                <li>Coordination with trusted partners in each location</li>
+                <li>Tenant placement and management</li>
+                <li>Regular condition reports and updates</li>
+                <li>Income collection and repatriation</li>
+                <li>Annual tax preparation assistance</li>
+                <li>Property enhancement recommendations</li>
+              </ul>
             </div>
           </div>
         </div>
