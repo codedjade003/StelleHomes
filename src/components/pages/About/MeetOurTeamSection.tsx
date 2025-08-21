@@ -1,8 +1,6 @@
 import type { JSX } from "react";
 import img_1 from "../../../assets/images/about/team/img_1.png";
 import img_2 from "../../../assets/images/about/team/img_2.png";
-import img_3 from "../../../assets/images/about/team/img_3.png";  
-import img_4 from "../../../assets/images/about/team/img_4.png";
 
 export const MeetOurTeamSection = (): JSX.Element => {
   const teamMembers = [
@@ -24,19 +22,19 @@ export const MeetOurTeamSection = (): JSX.Element => {
     },
     {
       id: 3,
-      name: "Edewede Osara",
+      name: "Dr Itohan Idugbe",
       position: "Head of Nigerian Properties",
       description:
-        "A respected figure in Lagos real estate, Edewede leads our Nigerian property division, helping international clients navigate the local market. His deep connections with developers and extensive knowledge of emerging neighborhoods ensure our clients access the best opportunities.",
-      image: img_3,
+        "A respected figure in Lagos real estate, Itohan leads our Nigerian property division, helping international clients navigate the local market. His deep connections with developers and extensive knowledge of emerging neighborhoods ensure our clients access the best opportunities.",
+      image: img_1,
     },
     {
       id: 4,
-      name: "Amina Okafor",
+      name: "Amina To Idil Hussein",
       position: "Legal Compliance Director",
       description:
         "With a background in international property law, Amina ensures all transactions meet legal requirements across multiple jurisdictions. Her expertise is crucial in simplifying the complex regulatory landscape of cross-border real estate investment.",
-      image: img_4,
+      image: img_2,
     },
   ];
 
