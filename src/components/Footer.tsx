@@ -25,8 +25,8 @@ export const Footer = (): JSX.Element => {
     "19B Adewole Kukui",
     "Lagos, Nigeria",
     "Email: info@stellehomes.com",
-    "Phone: +234 123 456 7890",
-    "Int'l: +1 555 123 4567",
+    "Phone: +234 912 222 0444",
+    "Int'l: +44 7576 842164‬‬",
   ];
 
   return (

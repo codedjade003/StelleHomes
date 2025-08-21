@@ -9,23 +9,14 @@ export const ContactSection = (): JSX.Element => {
 
   const internationalOffices = [
     {
-      city: "London, UK",
-      address: "42 Kensington High Street\nLondon, W8 5SF\nUnited Kingdom",
-      phone: "+44 20 7123 4567",
-      email: "london@stellehomes.com",
+      city: "Address in London",
+      address: "Fourth Avenue\nStanford Le Hope\nEssex\nSS17 8HN",
+      phone: "+44 7576 842 164",
     },
     {
-      city: "Toronto, Canada",
-      address: "120 Bloor Street East\nToronto, ON M4W 1B8\nCanada",
-      phone: "+1 416 123 4567",
-      email: "toronto@stellehomes.com",
-    },
-    {
-      city: "Dubai, UAE",
-      address:
-        "Business Bay, Al Abraj Street\nDubai, 123456\nUnited Arab Emirates",
-      phone: "+971 4 123 4567",
-      email: "dubai@stellehomes.com",
+      city: "Address in Lagos",
+      address: "19B Adewale Kuku\nLekki Phase 1\nLagos\nNigeria",
+      phone: "‪+234 912 222 0444‬",
     },
   ];
 
@@ -78,38 +69,26 @@ const faqData = [
         <h2 className="text-2xl sm:text-3xl text-[#c89901] font-normal font-[Montserrat]">
         Address
         </h2>
-        <address className="text-base sm:text-lg text-black leading-relaxed not-italic font-[Montserrat]">
-        123 Victoria Island <br />
-        Lagos, Nigeria
-        </address>
-        <p className="text-sm sm:text-base text-[#0a0000] font-[Montserrat]">
-        Mon-Fri: 9:00 AM - 5:00 PM
-        </p>
-
-        <div className="flex flex-col gap-1">
-        <a
-            href="mailto:info@stellehomes.com"
-            className="text-base text-[#0a0000] hover:text-[#c89901] font-[Montserrat]"
-        >
-            info@stellehomes.com
-        </a>
-        <div className="text-base text-[#0a0000] font-[Montserrat]">
+        <div className="text-base sm:text-lg text-black leading-relaxed not-italic font-[Montserrat]">
             <a href="tel:+2341234567890" className="hover:text-[#c89901]">
             Nigeria: +234 123 456 7890
             </a>
             <br />
             <a href="tel:+15551234567" className="hover:text-[#c89901]">
-            Int'l: +1 555 123 4567
+            London: +44 7576 842164
             </a>
         </div>
-        </div>
 
-        <h2 className="text-2xl sm:text-3xl text-[#c89901] font-normal mt-4 font-[Montserrat]">
+        <p className="text-sm sm:text-base text-[#0a0000] font-[Montserrat]">
+        Mon-Fri: 9:00 AM - 5:00 PM
+        </p>
+
+        <h2 className="text-2xl sm:text-3xl text-[#c89901] font-normal mt-[108px] font-[Montserrat] mb-4">
         Email Us
         </h2>
         <div className="text-base sm:text-lg text-black font-[Montserrat]">
         General Inquiries: <br />
-        <a href="mailto:info@stellehomes.com" className="hover:text-[#c89901]">
+        <a href="mailto:info@stellehomes.com" className=" hover:text-[#c89901]">
             info@stellehomes.com
         </a>
         </div>
@@ -118,9 +97,9 @@ const faqData = [
     {/* Column 2: International Presence */}
     <div className="flex-1 flex flex-col gap-6">
         <h2 className="text-2xl sm:text-3xl text-[#c89901] font-normal font-[Montserrat]">
-        Our International Presence
+        Our Address
         </h2>
-        {internationalOffices.slice(0, 2).map((office) => (
+        {internationalOffices.slice(0, 1).map((office) => (
         <div key={office.city} className="flex flex-col gap-2">
             <h3 className="text-base sm:text-lg text-[#c89901] font-normal font-[Montserrat]">
             {office.city}
@@ -136,50 +115,12 @@ const faqData = [
                 href={`tel:${office.phone.replace(/\s/g, "")}`}
                 className="hover:text-[#c89901]"
             >
-                Phone: {office.phone}
-            </a>
-            <br />
-            <a href={`mailto:${office.email}`} className="hover:text-[#c89901]">
-                Email: {office.email}
+                Tel: {office.phone}
             </a>
             </address>
-        </div>
-        ))}
-    </div>
-
-    {/* Column 3: 3rd International Office + Social Media */}
-    <div className="flex-1 flex flex-col gap-8 mt-4 md:mt-0">
-        {/* 3rd International Office */}
-        <div>
-        <h3 className="text-base sm:text-lg text-[#c89901] font-normal font-[Montserrat] mb-2">
-            {internationalOffices[2].city}
-        </h3>
-        <address className="text-sm sm:text-base text-black font-[Helvetica] not-italic">
-            {internationalOffices[2].address.split("\n").map((line, i) => (
-            <React.Fragment key={i}>
-                {line}
-                <br />
-            </React.Fragment>
-            ))}
-            <a
-            href={`tel:${internationalOffices[2].phone.replace(/\s/g, "")}`}
-            className="hover:text-[#c89901]"
-            >
-            Phone: {internationalOffices[2].phone}
-            </a>
-            <br />
-            <a
-            href={`mailto:${internationalOffices[2].email}`}
-            className="hover:text-[#c89901]"
-            >
-            Email: {internationalOffices[2].email}
-            </a>
-        </address>
-        </div>
-
         {/* Social Media */}
-        <div>
-        <h2 className="text-2xl sm:text-3xl text-[#c89901] font-normal font-[Montserrat] mb-2">
+        <div className="mt-12">
+        <h2 className="text-2xl sm:text-3xl text-[#c89901] font-normal font-[Montserrat] mb-4">
             Social Media
         </h2>
         <nav className="flex flex-col gap-1 font-[Montserrat]">
@@ -194,13 +135,40 @@ const faqData = [
             ))}
         </nav>
         </div>
+        </div>
+        ))}
+    </div>
+
+    {/* Column 3: 3rd International Office + Social Media */}
+    <div className="flex-1 flex flex-col gap-8 mt-[60px]">
+        {/* 3rd International Office */}
+        <div>
+        <h3 className="text-base sm:text-lg text-[#c89901] font-normal font-[Montserrat] mb-2">
+            {internationalOffices[1].city}
+        </h3>
+        <address className="text-sm sm:text-base text-black font-[Helvetica] not-italic">
+            {internationalOffices[1].address.split("\n").map((line, i) => (
+            <React.Fragment key={i}>
+                {line}
+                <br />
+            </React.Fragment>
+            ))}
+            <a
+            href={`tel:${internationalOffices[1].phone.replace(/\s/g, "")}`}
+            className="hover:text-[#c89901]"
+            >
+            Phone: {internationalOffices[1].phone}
+            </a>
+            <br />
+        </address>
+        </div>
     </div>
     </div>
 
 
 
     {/* Form Section */}
-    <div className="flex flex-col md:flex-row gap-8 mt-8 mb-12 md:mb-20 md:mt-12 px-4 sm:px-6 max-w-[1200px] mx-auto">
+    <div className="flex flex-col md:flex-row gap-8 mt-8 mb-12 md:mb-20 md:mt-20 px-4 sm:px-6 max-w-[1200px] mx-auto">
     {/* Left Column: Heading */}
     <div className="w-full md:w-[375px] flex-shrink-0">
         <h1 className="text-3xl sm:text-[35px] text-[#c89901] font-normal font-[Montserrat] leading-snug sm:leading-[43px]">

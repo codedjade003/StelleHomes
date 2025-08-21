@@ -26,6 +26,7 @@ const HeroSection: React.FC = () => {
           <div className="mt-6 sm:mt-8">
             <button
               className="w-full sm:w-[240px] h-[49px] rounded-[15px] px-4 bg-[#F7BD01] text-black font-semibold shadow hover:opacity-90 transition"
+              onClick={() => window.location.href = '/contact'}
             >
               Schedule Consultation
             </button>
