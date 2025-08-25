@@ -4,12 +4,13 @@ export interface PropertyData {
   location: string;
   price: string;
   description: string;
-  bedrooms?: string;
-  bathrooms?: string;
-  complex?: string;
-  area: string;
-  image: string;          // keep single cover image for cards
-  images?: string[];      // ✅ new: gallery images
+  bedrooms?: string;       // "2", "3", "4", or "Multiple"
+  bathrooms?: string;      // same deal
+  complex?: string;        // optional
+  area?: string;            // could be "—" if undefined
+  features?: string[];
+  image: string;           // cover image
+  images?: string[];       // gallery images
   backgroundColor: string;
-  availability?: string;  // ✅ reserved for backend (hide for now)
+  availability?: string;   // reserved, hide for now
 }

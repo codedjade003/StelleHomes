@@ -2,12 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- ✅ SEO Basics -->
+    <title>Stelle Homes – Modern Real Estate Solutions</title>
+    <meta name="description" content="Stelle Homes offers modern, sustainable, and affordable housing solutions tailored to your lifestyle. Discover your dream home today.">
+    <meta name="keywords" content="Stelle Homes, real estate, modern homes, sustainable housing, property, housing in Nigeria, apartments">
+    <meta name="author" content="Stelle Homes">
+
+    <!-- ✅ Mobile + Favicon -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- ✅ Open Graph (social sharing previews) -->
+    <meta property="og:title" content="Stelle Homes – Modern Real Estate Solutions" />
+    <meta property="og:description" content="Discover modern, sustainable, and affordable homes with Stelle Homes. Built for your lifestyle." />
+    <meta property="og:image" content="https://stellehomes.com/preview.jpg" />
+    <meta property="og:url" content="https://stellehomes.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- ✅ Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Stelle Homes – Modern Real Estate Solutions" />
+    <meta name="twitter:description" content="Modern, sustainable, and affordable housing solutions tailored to you." />
+    <meta name="twitter:image" content="https://stellehomes.com/preview.jpg" />
+
+    <!-- ✅ Structured Data (Google Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Stelle Homes",
+      "url": "https://stellehomes.com",
+      "logo": "https://stellehomes.com/vite.svg",
+      "sameAs": [
+        "https://facebook.com/stellehomes",
+        "https://instagram.com/stellehomes",
+        "https://x.com/stellehomes",
+        "https://youtube.com/@stellehomes"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <!-- ✅ Dev uses src/main.tsx, build injects bundled assets automatically -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

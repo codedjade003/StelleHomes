@@ -178,69 +178,77 @@ const faqData = [
     </div>
 
     {/* Right Column: Form */}
-    <form className="flex-1 flex flex-col gap-4 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <form
+      action="https://formspree.io/f/xandwvze"
+      method="POST"
+      className="flex-1 flex flex-col gap-4 w-full"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            className="w-full h-[52px] px-4 sm:px-6 bg-[#f6f4f1] rounded-lg text-[#686352] font-[Montserrat] placeholder-[#686352]"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          className="w-full h-[52px] px-4 sm:px-6 bg-[#f6f4f1] rounded-lg text-[#686352] font-[Montserrat]"
         />
         <input
-            type="email"
-            name="email"
-            placeholder="Email address"
-            className="w-full h-[52px] px-4 sm:px-6 bg-[#f6f4f1] rounded-lg text-[#686352] font-[Montserrat] placeholder-[#686352]"
+          type="email"
+          name="email"
+          placeholder="Email address"
+          required
+          className="w-full h-[52px] px-4 sm:px-6 bg-[#f6f4f1] rounded-lg text-[#686352] font-[Montserrat]"
         />
         <input
-            type="tel"
-            name="telephone"
-            placeholder="Telephone"
-            className="w-full h-[52px] px-4 sm:px-6 bg-[#f6f4f1] rounded-lg text-[#686352] font-[Montserrat] placeholder-[#686352]"
+          type="tel"
+          name="telephone"
+          placeholder="Telephone"
+          className="w-full h-[52px] px-4 sm:px-6 bg-[#f6f4f1] rounded-lg text-[#686352] font-[Montserrat]"
         />
         <input
-            type="text"
-            name="location"
-            placeholder="Location"
-            className="w-full h-[52px] px-4 sm:px-6 bg-[#f6f4f1] rounded-lg text-[#686352] font-[Montserrat] placeholder-[#686352]"
+          type="text"
+          name="location"
+          placeholder="Location"
+          className="w-full h-[52px] px-4 sm:px-6 bg-[#f6f4f1] rounded-lg text-[#686352] font-[Montserrat]"
         />
-        </div>
+      </div>
 
-        <select
+      <select
         name="inquiryType"
         className="w-full h-[52px] px-4 sm:px-6 bg-[#f6f4f1] rounded-lg text-[#686352] font-[Montserrat]"
-        >
+      >
         <option value="">Inquiry Type</option>
         <option value="general">General Inquiry</option>
         <option value="nigerian-property">Nigerian Property</option>
         <option value="international-property">International Property</option>
         <option value="investment-advisory">Investment Advisory</option>
         <option value="property-management">Property Management</option>
-        </select>
+      </select>
 
-        <textarea
+      <textarea
         name="message"
         placeholder="Message"
-        className="w-full h-[102px] px-4 sm:px-6 py-4 bg-[#f6f4f1] rounded-lg text-[#686352] font-[Montserrat] placeholder-[#686352] resize-none"
-        />
+        required
+        className="w-full h-[102px] px-4 sm:px-6 py-4 bg-[#f6f4f1] rounded-lg text-[#686352] font-[Montserrat] resize-none"
+      />
 
-        <select
+      <select
         name="contactMethod"
         className="w-full h-[52px] px-4 sm:px-6 bg-[#f6f4f1] rounded-lg text-[#686352] font-[Montserrat]"
-        >
+      >
         <option value="">Preferred Contact Method</option>
         <option value="email">Email</option>
         <option value="phone">Phone</option>
         <option value="whatsapp">WhatsApp</option>
-        </select>
+      </select>
 
-        <button
+      <button
         type="submit"
         className="w-full h-[52px] bg-[#f7bd01] rounded-lg hover:bg-[#e6a800] text-[#05372d] font-[Helvetica] text-base transition-colors mt-4"
-        >
+      >
         Send message
-        </button>
+      </button>
     </form>
+
     </div>
 
     </div>
