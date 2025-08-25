@@ -9,12 +9,12 @@ export const MeetOurTeamSection = (): JSX.Element => {
       name: "Stella Dennis",
       position: "Founder & CEO",
       description:
-        "With over 15 years of experience in international real estate and finance, Stella Dennis founded Stelle Homes to help investors navigate cross-border property markets. Her expertise spans Nigerian, UK, Europe and US real estate, with a particular focus on investment strategy and market analysis.",
+        "With over 15 years of experience in international real estate and finance, Stella Dennis founded Stelle Homes to help investors navigate cross-border property markets. Her expertise spans Nigerian and UK, with a particular focus on investment strategy and market analysis.",
       image: img_1,
     },
     {
       id: 2,
-      name: "Rhodell Williams",
+      name: "Rhodell Sherman",
       position: "Head of International Properties",
       description:
         "Based in our London office, Rhodell brings 12 years of experience in European and North American real estate markets. She specializes in helping Nigerian clients identify and secure premium investment properties abroad, with particular expertise in UK property law and investment structures.",
@@ -22,10 +22,10 @@ export const MeetOurTeamSection = (): JSX.Element => {
     },
     {
       id: 3,
-      name: "Dr Itohan Idugbe",
+      name: "Dr Itohan Idugboe",
       position: "Head of Nigerian Properties",
       description:
-        "A respected figure in Lagos real estate, Itohan leads our Nigerian property division, helping international clients navigate the local market. His deep connections with developers and extensive knowledge of emerging neighborhoods ensure our clients access the best opportunities.",
+        "A respected figure in Lagos real estate, Itohan leads our Nigerian property division, helping international clients navigate the local market. Her deep connections with developers and extensive knowledge of emerging neighborhoods ensure our clients access the best opportunities.",
       image: img_1,
     },
     {

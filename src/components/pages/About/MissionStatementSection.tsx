@@ -49,10 +49,10 @@ export const MissionStatementSection = (): JSX.Element => {
                 between Nigerian and international real estate markets. What began<br />
                 as a small consultancy helping Nigerians abroad invest in properties<br />
                 in Nigeria has grown into a comprehensive real estate firm with<br />
-                offices in Lagos, London, Miami and Toronto.
+                offices in Lagos and London.
               </span>
               <span className="lg:hidden">
-                Stelle Homes was founded in 2024 with a vision to bridge the gap between Nigerian and international real estate markets. What began as a small consultancy helping Nigerians abroad invest in properties in Nigeria has grown into a comprehensive real estate firm with offices in Lagos, London, Miami and Toronto.
+                Stelle Homes was founded in 2024 with a vision to bridge the gap between Nigerian and international real estate markets. What began as a small consultancy helping Nigerians abroad invest in properties in Nigeria has grown into a comprehensive real estate firm with offices in Lagos and London.
               </span>
             </p>
 
