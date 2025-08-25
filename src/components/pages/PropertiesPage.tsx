@@ -1,6 +1,6 @@
-import { FeaturedPropertiesSection } from "./Properties/FeaturedPropertiesSection";
 import { HeroSection } from "./Properties/HeroSection";
 import { HeroSection2 } from "./Properties/HeroSection2";
+import { FeaturedPropertiesSection } from "./Properties/newFeatured/FeaturedPropertiesSection";
 
 export default function PropertiesPage() {
   return (
