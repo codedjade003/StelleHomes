@@ -1,10 +1,3 @@
-import img_1 from "../../../../assets/images/properties/img_1.png";
-import img_2 from "../../../../assets/images/properties/img_2.png";
-import img_3 from "../../../../assets/images/properties/img_3.png";
-import img_4 from "../../../../assets/images/properties/img_4.png";
-import img_5 from "../../../../assets/images/properties/img_5.png";
-import img_6 from "../../../../assets/images/properties/img_6.png";
-
 // ✅ New imports
 import lekkiApt_1 from "../../../../assets/images/properties/lekkiApt/lekkiApt_1.jpg";
 import lekkiApt_2 from "../../../../assets/images/properties/lekkiApt/lekkiApt_2.jpg";
