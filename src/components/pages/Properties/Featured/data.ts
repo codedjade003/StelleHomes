@@ -22,6 +22,17 @@ import lekkiMall_4 from "../../../../assets/images/properties/lekkiMall/lekkiMal
 import lekkiMall_5 from "../../../../assets/images/properties/lekkiMall/lekkiMall_5.jpg";
 import lekkiMall_6 from "../../../../assets/images/properties/lekkiMall/lekkiMall_6.jpg";
 
+import img_1 from "../../../../assets/images/properties/new/img_1.jpeg";
+import img_2 from "../../../../assets/images/properties/new/img_2.jpeg";
+import img_3 from "../../../../assets/images/properties/new/img_3.jpeg";
+import img_4 from "../../../../assets/images/properties/new/img_4.jpeg";
+import img_5 from "../../../../assets/images/properties/new/img_5.jpeg";
+import img_6 from "../../../../assets/images/properties/new/img_6.jpeg";
+import img_7 from "../../../../assets/images/properties/new/img_7.jpeg";
+import img_8 from "../../../../assets/images/properties/new/img_8.jpeg";
+import img_9 from "../../../../assets/images/properties/new/img_9.jpeg";
+import img_10 from "../../../../assets/images/properties/new/img_10.jpeg";
+
 import type { PropertyData } from "./types";
 
 export const properties: PropertyData[] = [
@@ -90,4 +101,16 @@ export const properties: PropertyData[] = [
     ],
     backgroundColor: "bg-white",
   },
+  {
+    id:5,
+    title: "Luxurious 6 Bedroom Fully Detached",
+    location: "Lekki, Phase 1",
+    price: "₦1,100,000,000",
+    description: "A luxurious 6 bedroom fully detached house with a bq, located in a secured estate in Lekki Phase 1. The house features modern architecture, spacious rooms, pop ceiling, wardrobes, indoor and outdoor swimming pool, water heaters, fully fitted kitchen, balcony, cinema room, and more.",
+    area: "—",
+    features: ["Secured estate", "Interlocking street", "Modern structure", "Spacious Rooms", "Pop ceiling", "Wardrobes", "Indoor and outdoor swimming pool", "Water heaters", "All rooms ensuit", "Fully fitted kitchen", "Balcony", "2 Bq", "Cinema"],
+    image: img_1,
+    images: [img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8, img_9, img_10],
+    backgroundColor: "bg-[#fff9ed]",
+    }
 ];

@@ -30,10 +30,10 @@ export const MeetOurTeamSection = (): JSX.Element => {
     },
     {
       id: 4,
-      name: "Amina To Idil Hussein",
+      name: "Idil Hussein",
       position: "Legal Compliance Director",
       description:
-        "With a background in international property law, Amina ensures all transactions meet legal requirements across multiple jurisdictions. Her expertise is crucial in simplifying the complex regulatory landscape of cross-border real estate investment.",
+        "With a background in international property law, Idil ensures all transactions meet legal requirements across multiple jurisdictions. Her expertise is crucial in simplifying the complex regulatory landscape of cross-border real estate investment.",
       image: img_2,
     },
   ];
