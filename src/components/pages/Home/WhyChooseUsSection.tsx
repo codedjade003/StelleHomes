@@ -57,7 +57,7 @@ export const WhyChooseUsSection: React.FC = () => {
       mb-6
     "
   >
-    Why Choose StelleHomes
+    Why Choose Stelle Homes
   </h2>
 
   {/* Left Card (img_1) */}

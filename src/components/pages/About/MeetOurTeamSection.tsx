@@ -9,7 +9,7 @@ export const MeetOurTeamSection = (): JSX.Element => {
       name: "Stella Dennis",
       position: "Founder & CEO",
       description:
-        "With over 15 years of experience in international real estate and finance, Stella Dennis founded Stelle Homes to help investors navigate cross-border property markets. Her expertise spans Nigerian and UK, with a particular focus on investment strategy and market analysis.",
+        "With over 15 years of experience in international real estate and finance, Stella Dennis founded Stelle Homes to help investors navigate cross-border property markets. Her expertise spans Nigeria and UK, with a particular focus on investment strategy and market analysis in Real Estate.",
       image: img_1,
     },
     {
