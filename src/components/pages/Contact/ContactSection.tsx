@@ -20,7 +20,10 @@ export const ContactSection = (): JSX.Element => {
     },
   ];
 
-  const socialMediaLinks = ["Instagram", "Linkedin", "Facebook"];
+const socialMediaLinks = [
+  { name: "Facebook", url: "https://facebook.com/stellehomes" },
+  { name: "Instagram", url: "https://instagram.com/realstellehomes" },
+];
 
 const faqData = [
   {
@@ -120,20 +123,22 @@ const faqData = [
             </address>
         {/* Social Media */}
         <div className="mt-12">
-        <h2 className="text-2xl sm:text-3xl text-[#c89901] font-normal font-[Montserrat] mb-4">
+          <h2 className="text-2xl sm:text-3xl text-[#c89901] font-normal font-[Montserrat] mb-4">
             Social Media
-        </h2>
-        <nav className="flex flex-col gap-1 font-[Montserrat]">
+          </h2>
+          <nav className="flex flex-col gap-1 font-[Montserrat]">
             {socialMediaLinks.map((platform) => (
-            <a
-                key={platform}
-                href={`#${platform.toLowerCase()}`}
+              <a
+                key={platform.name}
+                href={platform.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-base sm:text-lg text-[#0a0000] font-[Helvetica] hover:text-[#c89901]"
-            >
-                {platform}
-            </a>
+              >
+                {platform.name}
+              </a>
             ))}
-        </nav>
+          </nav>
         </div>
         </div>
         ))}
