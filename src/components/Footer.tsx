@@ -1,8 +1,7 @@
 import { type JSX } from "react";
 import { Link } from "react-router-dom";
-import { FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 import logo from "../assets/logo_white.svg";
-import { FaXTwitter } from "react-icons/fa6";
 
 export const Footer = (): JSX.Element => {
   const quickLinks = [
@@ -48,17 +47,11 @@ export const Footer = (): JSX.Element => {
             markets to Nigerian clients.
           </p>
           <div className="flex gap-3">
-            <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20">
-              <FaXTwitter />
+            <a href="https://facebook.com/stellehomes" className="p-2 bg-white/10 rounded-full hover:bg-white/20">
+              <FaFacebook />
             </a>
-            <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20">
+            <a href="https://instagram.com/realstellehomes" className="p-2 bg-white/10 rounded-full hover:bg-white/20">
               <FaInstagram />
-            </a>
-            <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20">
-              <FaYoutube />
-            </a>
-            <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20">
-              <FaLinkedinIn />
             </a>
           </div>
         </div>

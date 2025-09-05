@@ -22,7 +22,7 @@ export const MeetOurTeamSection = (): JSX.Element => {
     },
     {
       id: 3,
-      name: "Dr Itohan Idugboe",
+      name: "Itohan Idugboe Dennis",
       position: "Head of Nigerian Properties",
       description:
         "A respected figure in Lagos real estate, Itohan leads our Nigerian property division, helping international clients navigate the local market. Her deep connections with developers and extensive knowledge of emerging neighborhoods ensure our clients access the best opportunities.",

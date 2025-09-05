@@ -1,5 +1,5 @@
 import React from "react";
-import img_1 from "../../../assets/images/home/whyChoose/img_1.png";
+import img_1 from "../../../assets/images/home/whyChoose/img_1.jpg";
 import svg_1 from "../../../assets/images/home/whyChoose/svg_1.svg";
 import img_2 from "../../../assets/images/home/whyChoose/img_2.png";
 
