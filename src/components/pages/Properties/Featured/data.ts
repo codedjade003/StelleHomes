@@ -55,7 +55,7 @@ export const properties: PropertyData[] = [
     id: 2,
     title: "Ikoyi Luxury Apartments",
     location: "Osborne, Ikoyi, Lagos",
-    price: "₦350,000,000",
+    price: "₦450,000,000",
     description:
       "Exclusive 3-bedroom apartments in Osborne, Ikoyi. Modern designs with serene views and maximum privacy.",
     bedrooms: "3 Bedrooms",
@@ -105,7 +105,7 @@ export const properties: PropertyData[] = [
     id:5,
     title: "Luxurious 6 Bedroom Fully Detached",
     location: "Lekki, Phase 1",
-    price: "₦1,100,000,000",
+    price: "₦1,300,000,000",
     description: "A luxurious 6 bedroom fully detached house with a bq, located in a secured estate in Lekki Phase 1. The house features modern architecture, spacious rooms, pop ceiling, wardrobes, indoor and outdoor swimming pool, water heaters, fully fitted kitchen, balcony, cinema room, and more.",
     area: "—",
     features: ["Secured estate", "Interlocking street", "Modern structure", "Spacious Rooms", "Pop ceiling", "Wardrobes", "Indoor and outdoor swimming pool", "Water heaters", "All rooms ensuit", "Fully fitted kitchen", "Balcony", "2 Bq", "Cinema"],
